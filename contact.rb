@@ -79,11 +79,3 @@ class Contact
   end
 
 end
-
-
-# TEST
-jose = Contact.create("Jose", "Bautista", "joeybats19@fake.email", "Flippin' bats for your playoff enjoyment!")
-edwin = Contact.create("Edwin", "Encarnacion", "edwin@fake.email", "Walking the parrot...in Cleveland. So sad. :\(")
-pillar = Contact.create("Kevin", "Pillar", "kevin.pillar@fake.email", "Catch all the things!")
-
-# puts jose.details
