@@ -3,15 +3,13 @@
     There are <span><%= Contact.all.count %></span> contacts
   </div>
 
-  <ul class="gallery">
+  <ul class="list">
 
     <% Contact.all.each do |contact|  %>
         <li>
-          <div>
-            <span><%= contact.full_name %> (<%= contact.email %>)</span>
-            <a href="">Edit</a> |
-            <a href="">Delete</a>
-          </div>
+          <h3><%= contact.full_name %> (<%= contact.email %>)</h3>
+          <a href="">Edit</a> |
+          <a href="">Delete</a>
         </li>
     <% end %>
 

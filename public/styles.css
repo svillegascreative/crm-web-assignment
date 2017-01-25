@@ -33,9 +33,9 @@ nav ul {
   text-align: center;
 }
 nav li {
-  display: inline-block;
   background-color: #ccc;
   padding: 0 10px;
+  margin: 2px 0;
 }
 nav a {
   text-decoration: none;
@@ -51,25 +51,20 @@ nav a {
 }
 .summary span {
   font-weight: bold;
-  border-bottom: 5px solid #1BE0CF;
+  border-bottom: 3px solid #1BE0CF;
   font-size: 1.2em;
 }
 
-/* gallery */
-.gallery li {
-  width: 33%;
-  display: inline-block;
-  margin: 5px 1px;
-}
-.gallery img {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  margin-bottom: 2px;
-}
-.gallery div {
+/* list */
+.list li {
+  margin: 0.5em 0;
   background-color: #1BE0CF;
-  text-align: center;
+  padding: 1em;
+}
+.list h3 {
+  line-height: 1;
+}
+.list a {
   font-size: 0.8em;
 }
 
