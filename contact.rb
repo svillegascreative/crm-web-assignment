@@ -21,9 +21,7 @@ class Contact
 
   # Accept an id as an argument and return the contact who has that id
   def self.find(search_id)
-    @@contacts.each do |contact|
-      return contact if contact.id == search_id
-    end
+    @@contacts.find { |contact| contact.id == search_id }
   end
 
   # Search for a contact using attributes other than id

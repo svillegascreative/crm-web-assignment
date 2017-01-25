@@ -28,7 +28,7 @@ main {
   margin: 0.5em 1em;
 }
 
-/* nav */
+/* ------------------- NAV STYLES ------------------ */
 nav ul {
   text-align: center;
 }
@@ -55,7 +55,7 @@ nav a {
   font-size: 1.2em;
 }
 
-/* list */
+/* ------------------------- INDEX PAGE ------------------ */
 .list li {
   margin: 0.5em 0;
   background-color: #1BE0CF;
