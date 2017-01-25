@@ -7,9 +7,8 @@
 
     <% Contact.all.each do |contact|  %>
         <li>
-          <h3><%= contact.full_name %> (<%= contact.email %>)</h3>
-          <a href="">Edit</a> |
-          <a href="">Delete</a>
+          <h3><%= contact.full_name %></h3>
+          <a href="/contacts/<%= contact.id %>">View contact</a>
         </li>
     <% end %>
 
