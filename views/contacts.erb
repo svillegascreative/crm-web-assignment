@@ -2,6 +2,12 @@
 
 <ul>
   <% Contact.all.each do |contact|  %>
-    <li><%= contact.full_name %>: <%= contact.note %></li>
+      <li>
+        <div>
+          <span><%= contact.full_name %> (<%= contact.email %>)</span>
+          <a href="">Edit</a> |
+          <a href="">Delete</a>
+        </div>
+      </li>
   <% end %>
 </ul>

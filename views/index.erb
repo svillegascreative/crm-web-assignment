@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title><%= @crm_app_name %></title>
-</head>
-<body>
+<main>
+  <div class="summary">
+    There are <span><%= Contact.all.count %></span> contacts
+  </div>
 
-  <h1>Welcome to <%= @crm_app_name %></h1>
-  <p>
-    Main menu
-  </p>
-  <ul>
-    <li>
-      <a href="/contacts" >View all contacts</a>
-<!--      <a href="/contacts" >View all contacts</a> -->
-      <a href="/contacts/new" >Add a new contact</a>
-      <a href="/modify" >Modify a contact</a>
-      <a href="/delete" >Delete a contact</a>
-      <a href="/search" >Searcxh by attribute</a>
-      <a href="/contacts" >View all contacts</a>
-    </li>
+  <ul class="gallery">
+
+    <% Contact.all.each do |contact|  %>
+        <li>
+          <div>
+            <span><%= contact.full_name %> (<%= contact.email %>)</span>
+            <a href="">Edit</a> |
+            <a href="">Delete</a>
+          </div>
+        </li>
+    <% end %>
+
   </ul>
-
-</body>
-</html>
+</main>
