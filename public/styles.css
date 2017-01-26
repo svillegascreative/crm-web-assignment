@@ -15,11 +15,24 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #134A8E;
+}
+a:hover {
+  color: #1D2D5C;
+  border-bottom: 1px solid #1D2D5C;
+  transition: all 3s ease;
+}
+a:visited {
+  color: #E8291C;
+}
+
 .header h1 {
   margin: 0;
   color: #fff;
   text-align: center;
-  background-color: #363636;
+  background-color: #1D2D5C;
   font-size: 1.5em;
   line-height: 2em;
 }
@@ -37,7 +50,9 @@ nav li {
   padding: 0 10px;
   margin: 2px 0;
 }
-nav a {
+nav a,
+nav a:hover,
+nav a:visited {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
@@ -45,20 +60,21 @@ nav a {
 
 /* summary */
 .summary {
-  background-color: #FF806D;
+  background-color:#134A8E;
+  color: #FFF;
   padding: 8px;
   margin: 2px 0;
 }
 .summary span {
   font-weight: bold;
-  border-bottom: 3px solid #1BE0CF;
+  border-bottom: 3px solid #E8291C;
   font-size: 1.2em;
 }
 
 /* ------------------------- INDEX PAGE ------------------ */
 .list li {
   margin: 0.5em 0;
-  background-color: #1BE0CF;
+  background-color: #ddd;
   padding: 1em;
 }
 .list h3 {
@@ -70,7 +86,7 @@ nav a {
 
 /* footer */
 footer {
-  background-color: #000;
+  background-color: #1D2D5C;
   color: #fff;
   text-align: center;
   line-height: 3em;
