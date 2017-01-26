@@ -61,3 +61,8 @@ delete '/contacts/:id' do
     raise Sinatra::NotFound
   end
 end
+
+# Close connection to prevent Timeout errors from MiniRecord
+after do
+  ActiveRecord::Base.connection.close
+end
